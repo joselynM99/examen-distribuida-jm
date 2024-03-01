@@ -1,0 +1,18 @@
+javax:
+  sql:
+    DataSource:
+      ds1:
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        dataSource:
+          url: jdbc:postgresql://dpg-cmossu7qd2ns738mohbg-a.oregon-postgres.render.com/distribuida_fjus
+          user: distribuida
+          password: 2ic23cPGGoEsc9OZb0v3GvwyUt36YJ5C
+
+server:
+  port: 8080
+
+helidon:
+  jndi:
+    resources:
+      ds1:
+        jndi-name: "java:jboss/datasources/ds1"
